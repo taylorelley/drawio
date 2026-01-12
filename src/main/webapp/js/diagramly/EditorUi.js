@@ -20448,15 +20448,20 @@
 			return true;
 		}
 
-		var enabled = urlParams['vsdx'] == '1' || urlParams['vsdx-export'] == '1';
+		var disabled = false;
 
-		if (!enabled && Editor.config != null)
+		if (Editor.config != null)
 		{
-			enabled = Editor.config.vsdxExport === true || Editor.config.vsdxExport == '1' ||
-				Editor.config.enableVsdxExport === true || Editor.config.enableVsdxExport == '1';
+			disabled = Editor.config.vsdxExport === false || Editor.config.vsdxExport == '0' ||
+				Editor.config.enableVsdxExport === false || Editor.config.enableVsdxExport == '0';
 		}
 
-		return enabled;
+		if (disabled)
+		{
+			return false;
+		}
+
+		return true;
 	};
 
 	EditorUi.prototype.addRemoteServiceSecurityCheck = function(xhr)

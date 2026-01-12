@@ -11,6 +11,8 @@ License
 
 The minified code authored by us in this repo is licensed under an Apache v2 license, but not all the sources to build those files are in this repo. This is not an open source project. The upstream project did not accept PRs, but this fork welcomes PRs and Gen AI contributions.
 
+This fork is based on the original draw.io project by JGraph Ltd (https://github.com/jgraph/drawio) and includes Apache v2 licensing attribution to the upstream authors where applicable.
+
 The JGraph provided icons and diagram templates are licensed under the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Additional terms may also apply where the icons are originally defined by a third-party copyright holder. We have checked in all cases that the original license allows use in this project. Also see the terms for using the draw.io logo below.
 
 Additional minified JavaScript files and Java libraries are used in this project. All of the licenses are deemed compatible with the Apache 2.0, nothing is GPL or AGPL, due diligence is performed on all third-party code.

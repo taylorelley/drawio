@@ -20443,7 +20443,20 @@
 	
 	EditorUi.prototype.vsdxExportEnabled = function()
 	{
-		return this.getServiceName() == 'atlassian';
+		if (this.getServiceName() == 'atlassian')
+		{
+			return true;
+		}
+
+		var enabled = urlParams['vsdx'] == '1' || urlParams['vsdx-export'] == '1';
+
+		if (!enabled && Editor.config != null)
+		{
+			enabled = Editor.config.vsdxExport === true || Editor.config.vsdxExport == '1' ||
+				Editor.config.enableVsdxExport === true || Editor.config.enableVsdxExport == '1';
+		}
+
+		return enabled;
 	};
 
 	EditorUi.prototype.addRemoteServiceSecurityCheck = function(xhr)

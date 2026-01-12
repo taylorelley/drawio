@@ -21,10 +21,10 @@ draw.io Community Edition (draw.io-ce) is an open-source diagramming and whitebo
 ### Run with hosting or packaging
 
 - Publish the `master` branch to GitHub Pages for a quick static deployment.
-- Use the recommended Docker project at https://github.com/jgraph/docker-drawio.
-- Download draw.io Desktop from https://get.diagrams.net.
+- Use the recommended Docker project at [jgraph/docker-drawio](https://github.com/jgraph/docker-drawio).
+- Download draw.io Desktop from [get.diagrams.net](https://get.diagrams.net).
 
-The packaged `.war` of the client and servlets is built when the project is tagged and available on the releases page: https://github.com/taylorelley/drawio-ce/releases.
+The packaged `.war` of the client and servlets is built when the project is tagged and available on the [releases page](https://github.com/taylorelley/drawio/releases).
 
 ## Supported browsers
 
@@ -46,7 +46,7 @@ If you are unsure where to start, open an issue and describe what you want to im
 
 draw.io-ce is open source and licensed under the Apache 2.0 license.
 
-This fork is based on the original draw.io project by JGraph Ltd (https://github.com/jgraph/drawio) and includes Apache v2 licensing attribution to the upstream authors where applicable.
+This fork is based on the original draw.io project by [JGraph Ltd](https://github.com/jgraph/drawio) and includes Apache v2 licensing attribution to the upstream authors where applicable.
 
 The JGraph provided icons and diagram templates are licensed under the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Additional terms may also apply where the icons are originally defined by a third-party copyright holder. We have checked in all cases that the original license allows use in this project. Also see the terms for using the draw.io logo below.
 
@@ -56,7 +56,7 @@ We make no copyright claim on the content you create with this software, regardl
 
 ## Upstream project notes
 
-The upstream project runs a production-grade deployment of the diagramming interface at https://app.diagrams.net.
+The upstream project runs a production-grade deployment of the diagramming interface at [app.diagrams.net](https://app.diagrams.net).
 
 The upstream project notes that it is written by humans only and does not accept PRs. Those restrictions do not apply to draw.io-ce.
 

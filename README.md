@@ -2,14 +2,16 @@
 
 draw.io Community Edition (draw.io-ce) is an open-source diagramming and whiteboarding application. This community-driven fork is based on the original draw.io project by JGraph Ltd, with a focus on open collaboration and transparency.
 
-**Notable in this fork:** Reintroduced Microsoft Visio (.vsdx) export support.
-
 ## Features
 
 - Flexible diagramming and whiteboarding experience
 - Multiple themes and templates
-- Export options including SVG, PNG, PDF, and VSDX (in this fork)
+- Export options including SVG, PNG, PDF, and VSDX
 - Runs in a modern browser with no required backend
+
+## Try it out!
+
+Check out the demo version hosted on Github Pages at [draw.io-ce](https://taylorelley.github.io/drawio/)
 
 ## Getting started
 
@@ -21,8 +23,8 @@ draw.io Community Edition (draw.io-ce) is an open-source diagramming and whitebo
 ### Run with hosting or packaging
 
 - Publish the `master` branch to GitHub Pages for a quick static deployment.
-- Use the recommended Docker project at [jgraph/docker-drawio](https://github.com/jgraph/docker-drawio).
-- Download draw.io Desktop from [get.diagrams.net](https://get.diagrams.net).
+- Use the recommended Docker project at [jgraph/docker-drawio](https://github.com/jgraph/docker-drawio) (dockerized draw.io-ce coming soon).
+- Download draw.io Desktop from [get.diagrams.net](https://get.diagrams.net) (draw.io-ce Desktop coming soon).
 
 The packaged `.war` of the client and servlets is built when the project is tagged and available on the [releases page](https://github.com/taylorelley/drawio/releases).
 
@@ -65,10 +67,6 @@ The upstream project has its own licensing and contribution restrictions that do
 ## Scope of the project
 
 draw.io is a diagramming or whiteboarding application, depending on which theme is selected. It is not an SVG editing app; the SVG export is designed only for embedding in web pages, not for further editing in other tools.
-
-draw.io-ce is not intended as a framework for building other products from; for this try either [Tldraw](https://github.com/tldraw/tldraw) or [Excalidraw](https://github.com/excalidraw/excalidraw).
-
-Note, in particular, we don't have support for collaborative editing in this project. If this is important, one of the projects above is likely a better choice.
 
 If you are using a draw.io project/product and have issues or questions about the editor itself, the issue tracker and discussion in this GitHub project are likely a good place to look.
 

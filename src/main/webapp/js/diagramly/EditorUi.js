@@ -20431,8 +20431,8 @@
 		var file = this.getCurrentFile();
 		
 		return file != null &&
-				((file.constructor == DriveFile && file.isEditable()) ||
-				file.constructor == DropboxFile);
+				((window.DriveFile != null && file.constructor == window.DriveFile &&
+				file.isEditable()) || file.constructor == DropboxFile);
 	};
 	
 	//===========Adding methods to find the service running draw.io and allowing calling draw.io remote services

@@ -9,7 +9,7 @@
 	</target>
 
 	<target name="extensions">
-		<jscomp compilationLevel="simple" debug="false" forceRecompile="true" output="${war.dir}/js/extensions.min.js">
+		<jscomp compilationLevel="simple" debug="false" forceRecompile="true" output="${basedir}/.extensions-tmp.js">
 			<sources dir="${war.dir}">
 				<file name="js/diagramly/Extensions.js" />
 				<file name="js/mermaid/mermaid2drawio.js" />
@@ -18,9 +18,14 @@
 				<file name="js/diagramly/vsdx/bmpDecoder.js" />
 				<file name="js/diagramly/vsdx/importer.js" />
 				<file name="js/diagramly/vsdx/VsdxExport.js" />
-				<file name="js/jszip/jszip.min.js" />
 			</sources>
 		</jscomp>
+		<concat destfile="${war.dir}/js/extensions.min.js" fixlastline="yes" append="no">
+			<file name="${basedir}/.extensions-tmp.js" />
+			<file name="${war.dir}/js/jszip/jszip.min.js" />
+		</concat>
+		<delete file="${basedir}/.extensions-tmp.js"/>
+	</target>
 	</target>
 
 	<target name="app" depends="merge">

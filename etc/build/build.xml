@@ -5,7 +5,27 @@
 	<property file="build.properties" />
 	<taskdef name="jscomp" classname="com.google.javascript.jscomp.ant.CompileTask" classpath="${jscompiler}" />
 
-	<target name="merge">
+	<target name="merge" depends="extensions">
+	</target>
+
+	<target name="extensions">
+		<jscomp compilationLevel="simple" debug="false" forceRecompile="true" output="${basedir}/.extensions-tmp.js">
+			<sources dir="${war.dir}">
+				<file name="js/diagramly/Extensions.js" />
+				<file name="js/mermaid/mermaid2drawio.js" />
+				<file name="js/diagramly/graphml/mxGraphMlCodec.js" />
+				<file name="js/diagramly/vsdx/mxVsdxCanvas2D.js" />
+				<file name="js/diagramly/vsdx/bmpDecoder.js" />
+				<file name="js/diagramly/vsdx/importer.js" />
+				<file name="js/diagramly/vsdx/VsdxExport.js" />
+			</sources>
+		</jscomp>
+		<concat destfile="${war.dir}/js/extensions.min.js" fixlastline="yes" append="no">
+			<file name="${basedir}/.extensions-tmp.js" />
+			<file name="${war.dir}/js/jszip/jszip.min.js" />
+		</concat>
+		<delete file="${basedir}/.extensions-tmp.js"/>
+	</target>
 	</target>
 
 	<target name="app" depends="merge">

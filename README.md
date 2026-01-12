@@ -1,17 +1,17 @@
 About
 -----
-draw.io, this project, is a configurable diagramming/whiteboarding visualization application. draw.io is jointly owned and developed by draw.io Ltd and draw.io AG.
+draw.io Community Edition (draw.io-ce) is a configurable diagramming/whiteboarding visualization application. This fork is based on the draw.io project from draw.io Ltd and draw.io AG.
 
-As well as running this project, we run a production-grade deployment of the diagramming interface at https://app.diagrams.net.
+The upstream project runs a production-grade deployment of the diagramming interface at https://app.diagrams.net.
 
 This fork reintroduces Microsoft Visio (.vsdx) export support.
 
 License
 -----------------
 
-The minified code authored by us in this repo is licensed under an Apache v2 license, but not all the sources to build those files are in this repo. This is not an open source project. The upstream project did not accept PRs, but this fork welcomes PRs and Gen AI contributions.
+draw.io-ce is open source and licensed under the Apache 2.0 license, and this fork welcomes PRs and Gen AI contributions.
 
-This fork is based on the original draw.io project by JGraph Ltd (https://github.com/jgraph/drawio) and includes Apache v2 licensing attribution to the upstream authors where applicable.
+This fork is based on the original draw.io project by JGraph Ltd (https://github.com/jgraph/drawio) and includes Apache v2 licensing attribution to the upstream authors where applicable. The upstream project has its own licensing and contribution restrictions that do not apply to draw.io-ce.
 
 The JGraph provided icons and diagram templates are licensed under the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Additional terms may also apply where the icons are originally defined by a third-party copyright holder. We have checked in all cases that the original license allows use in this project. Also see the terms for using the draw.io logo below.
 
@@ -31,7 +31,7 @@ Scope of the Project
 
 draw.io is a diagramming or whiteboarding application, depending on which theme is selected. It is not an SVG editing app, the SVG export is designed only for embedding in web pages, not for further editing in other tools.
 
-The application is designed to be entirely as-is. draw.io is not suitable as a framework for building other products from, as source code is not provided. For this try either [Tldraw](https://github.com/tldraw/tldraw) or [Excalidraw](https://github.com/excalidraw/excalidraw).
+The application is designed to be entirely as-is. draw.io-ce is not intended as a framework for building other products from; for this try either [Tldraw](https://github.com/tldraw/tldraw) or [Excalidraw](https://github.com/excalidraw/excalidraw).
 
 Note, in particular, we don't have support for collaborative editing in this project. If this is important, one of the projects above is likely a better choice.
 

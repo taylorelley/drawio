@@ -4,6 +4,8 @@ draw.io, this project, is a configurable diagramming/whiteboarding visualization
 
 As well as running this project, we run a production-grade deployment of the diagramming interface at https://app.diagrams.net.
 
+This fork reintroduces Microsoft Visio (.vsdx) export support.
+
 License
 -----------------
 
@@ -18,7 +20,9 @@ We make no copyright claim on the content you create with this software, regardl
 PRs and use of gen AI
 ---------------------
 
-This entire project is written by humans only and written by the core team only. There have been various reasons for this historically, but the key reason from 2024 is that we have no way to determine whether PRs are also human written.
+Unlike the original project, this fork welcomes Gen AI usage and contributions from anyone, provided changes are clearly described and effectively tested.
+
+The upstream project notes that it is written by humans only and does not accept PRs; those restrictions do not apply to this fork.
 
 Scope of the Project
 --------------------

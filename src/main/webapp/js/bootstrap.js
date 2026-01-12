@@ -288,7 +288,7 @@ else
         
         function loadAppJS()
         {
-            mxscript('js/app.min.js', function()
+            mxscript('js/integrate.min.js', function()
             {
                 mxScriptsLoaded = true;
                 checkAllLoaded();
@@ -341,5 +341,4 @@ window.onerror = function()
         status.innerHTML = 'Page could not be loaded. Please try refreshing.';
     }
 };
-
 

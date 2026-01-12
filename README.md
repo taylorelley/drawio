@@ -24,7 +24,7 @@ draw.io Community Edition (draw.io-ce) is an open-source diagramming and whitebo
 - Use the recommended Docker project at https://github.com/jgraph/docker-drawio.
 - Download draw.io Desktop from https://get.diagrams.net.
 
-The packaged `.war` of the client and servlets is built when the project is tagged and available on the releases page: https://github.com/jgraph/draw.io/releases.
+The packaged `.war` of the client and servlets is built when the project is tagged and available on the releases page: https://github.com/taylorelley/drawio-ce/releases.
 
 ## Supported browsers
 
